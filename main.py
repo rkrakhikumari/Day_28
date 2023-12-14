@@ -72,8 +72,8 @@ image = Image.open("tomato.jpg")
 # image = image.resize((100, 100), Image.Resampling.LANCZOS)
 tomato_img = ImageTk.PhotoImage(image)
 canvas = Canvas(width=200, height=224, bg=YELLOW, highlightthickness=0)
-canvas.create_image(100, 112, image=tomato_img)  # Adjust the position as needed
-timer_text = canvas.create_text(100, 130, text="00:00", fill="#E97451", font=(FONT_NAME, 40, "bold"))
+canvas.create_image(100,100, image=tomato_img)  # Adjust the position as needed
+timer_text = canvas.create_text(100, 100, text="00:00", fill="#E97451", font=(FONT_NAME, 40, "bold"))
 canvas.grid(column=1, row=1)
 
 label = Label(text="Timer", fg="#954535", font=(FONT_NAME, 50), bg=YELLOW)
